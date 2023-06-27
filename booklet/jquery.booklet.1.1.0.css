@@ -12,7 +12,7 @@
 	
 	/*.booklet .b-load  {display:none;}*/
    
-   	/* Page Wrappers */
+   	/* Page Wrappers
 	.booklet .b-wrap       {top:0; position:absolute;}
 	.booklet .b-wrap-left  {background:#fff;}
 	.booklet .b-wrap-right {background:#efefef;}
@@ -23,7 +23,7 @@
 	.booklet .b-p3 .b-wrap,
 	.booklet .b-p4 .b-wrap  {left:0;}
 	.booklet .b-p0 .b-wrap  {right:0;}
-	
+	 */
    	/* Custom Page Types */
 	.booklet .b-page-blank  {padding:0; width:100%; height:100%;}
 	.booklet .b-page-cover  {padding:0; width:100%; height:100%; background:#925C0E;}

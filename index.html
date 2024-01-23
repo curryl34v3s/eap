@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ResilienceWorks EAP brochure</title>
 
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
@@ -25,6 +24,7 @@
             background: #ffffff;
             color: #444;
             font-size: 12px;
+            color: #333;
             font-family: 'Oswald', sans-serif;
         }
 
@@ -33,13 +33,54 @@
             height: 607px;
             position: relative;
             margin: 0 auto 10px;
-            border-radius: 10px;
+            -moz-box-shadow: 0px 0px 1px #fff;
+            -webkit-box-shadow: 0px 0px 1px #fff;
             box-shadow: 0px 0px 1px #fff;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
         }
 
-        .b-load img {
-            width: 100%;
-            height: 100%;
+        .booklet .b-counter {
+            bottom: 10px;
+            position: absolute;
+            display: block;
+            width: 90%;
+            height: 20px;
+            border-top: 1px solid #ddd;
+            color: #222;
+            text-align: center;
+            font-size: 12px;
+            padding: 5px 0 0;
+            background: transparent;
+            -moz-box-shadow: 0px -1px 1px #fff;
+            -webkit-box-shadow: 0px -1px 1px #fff;
+            box-shadow: 0px -1px 1px #fff;
+            opacity: 0.8;
+        }
+
+        .book_wrapper {
+            margin: 0 auto;
+            padding-top: 50px;
+            width: 905px;
+            height: 540px;
+            position: relative;
+            background: transparent;
+        }
+
+        .book_wrapper p {
+            font-size: 15px;
+            margin: 5px 5px 5px 15px;
+        }
+
+        .book_wrapper img {
+            margin: 10px 0px 5px 35px;
+            width: 300px;
+            padding: 4px;
+            border: 1px solid #ddd;
+            -moz-box-shadow: 1px 1px 1px #fff;
+            -webkit-box-shadow: 1px 1px 1px #fff;
+            box-shadow: 1px 1px 1px #fff;
         }
 
         a#next_page_button,
@@ -71,19 +112,52 @@
             background-position: 0px 0px;
         }
     </style>
+
 </head>
 
 <body>
     <br><br><br><br><br>
 
-    <div class="booklet">
+    <div class="book_wrapper">
         <a id="next_page_button"></a>
         <a id="prev_page_button"></a>
 
-        <div id="mybook" class="b-load">
-            <img src="images/Cover page.jpeg" alt="" />
-            <img src="images/Director's profile.jpeg" alt="" />
-            <!-- Add more images as needed -->
+        <div id="mybook" style="display: none;">
+            <div class="b-load">
+                <div>
+                    <img src="images/Cover page.jpeg" alt="" />
+                </div>
+                <div>
+                    <img src="images/Director's profile.jpeg" alt="" />
+                </div>
+                <div>
+                    <img src="images/Clients.jpeg" alt="" />
+                </div>
+                <div>
+                    <img src="images/Why EAP.jpeg" alt="" />
+                </div>
+                <div>
+                    <img src="images/about RW.jpeg" alt="" />
+                </div>
+                <div>
+                    <img src="images/why POSH.jpeg" alt="" />
+                </div>
+                <div>
+                    <img src="images/Stress Aduit.jpeg" alt="" />
+                </div>
+                <div>
+                    <img src="images/Training.jpeg" alt="" />
+                </div>
+                <div>
+                    <img src="images/customised consultation.jpeg" alt="" />
+                </div>
+                <div>
+                    <img src="images/DE&I.jpeg" alt="" />
+                </div>
+                <div>
+                    <img src="images/Get in touch.jpeg" alt="" />
+                </div>
+            </div>
         </div>
     </div>
 
@@ -101,9 +175,12 @@
                 direction: 'LTR',
                 next: $bttn_next,
                 prev: $bttn_prev,
+                auto: true,
+                start: 0
             });
         });
     </script>
+
 </body>
 
 </html>
